@@ -13,7 +13,7 @@ export default class Exist extends Phaser.Scene {
 
     }
         create () {
-            this.add.image(800, 300, 'Exist');
+            this.add.image(500, 400, 'Exist');
             this.add.text(300, 80, 'Press enter to go back to the beginning', {font: 'American Typewriter'});
 
    this.input.keyboard.on('keyup-ENTER', this.handleEnterKey, this);
