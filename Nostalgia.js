@@ -4,7 +4,7 @@ export default class Nostalgia extends Phaser.Scene {
      super({ key: 'Nostalgia' });
    }
 
-      function preload () {
+    preload () {
     console.log('Nostalgia preloading assets...');
     this.load.image('Calling', 'Transitions/Calling.png'); 
     this.load.image('Exist', 'Transitions/Exist.png');
