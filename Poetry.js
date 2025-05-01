@@ -4,7 +4,7 @@ export default class Poetry extends Phaser.Scene {
      super({ key: 'Poetry' });
    }
 
-      function preload () {
+    preload () {
     console.log('Poetry preloading assets...');
     this.load.image('Calling', 'Transitions/Calling.png'); 
     this.load.image('Exist', 'Transitions/Exist.png');
