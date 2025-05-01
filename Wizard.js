@@ -6,11 +6,11 @@ export default class Wizard extends Phaser.Scene {
 
       function preload () {
     console.log('Wizard preloading assets...');
-    this.load.image('Calling', 'Calling.png'); 
-    this.load.image('Exist', 'Exist.png');
-    this.load.image('Nostalgia', 'Nostalgia core.png');
-    this.load.image('Poetry', 'Poetry.png');
-    this.load.image('Wizard', 'Wizard.png');
+    this.load.image('Calling', 'Transitions/Calling.png'); 
+    this.load.image('Exist', 'Transitions/Exist.png');
+    this.load.image('Nostalgia', 'Transitions/Nostalgia core.png');
+    this.load.image('Poetry', 'Transitions/Poetry.png');
+    this.load.image('Wizard', 'Transitions/Wizard.png');
 
     }
         create () {
@@ -28,7 +28,7 @@ var config = {
     type: Phaser.AUTO,
     width: 800,
     height: 600,
-    scene: [Calling],
+    scene: [Calling, Wizard],
 };
 
 const game = new Phaser.Game(config);
