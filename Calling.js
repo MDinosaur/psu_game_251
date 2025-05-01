@@ -4,7 +4,7 @@ export default class Calling extends Phaser.Scene {
    }
    
   preload () {
-    console.log(' Calling preloading assets...');
+    console.log(' CALLING preloading assets...');
     this.load.image('Calling', 'Transitions/Calling.png'); 
     this.load.image('Exist', 'Transitions/Exist.png');
     this.load.image('Nostalgia', 'Transitions/Nostalgia core.png');
@@ -12,7 +12,7 @@ export default class Calling extends Phaser.Scene {
     this.load.image('Wizard', 'Transitions/Wizard.png');
 }
    create () {
-     console.log('Creating scene...')
+     console.log('CALLING creating scene...')
       this.add.image(800, 600, 'Calling');
       this.add.text(800, 20, 'Press up key to see a cool wizard', { font: 'American Typewriter' });
       this.add.text(800, 40, 'Press down key to see poetry', { font: 'American Typewriter' });
