@@ -36,7 +36,7 @@ export default class Calling extends Phaser.Scene {
        console.log(`Down Key has been pressed`);
     }
 
-    handleLefttKey() {
+    handleLeftKey() {
         //this.scene.start('Nostalgia'); 
        console.log(`Left Key has been pressed`);
     }
