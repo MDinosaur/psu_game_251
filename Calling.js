@@ -13,17 +13,17 @@ export default class Calling extends Phaser.Scene {
 }
    create () {
      console.log('Creating scene...')
-      this.add.image(400, 300, 'Calling');
-      this.add.text(400, 20, 'Press up key to see a cool wizard', { font: 'American Typewriter' });
-      this.add.text(400, 40, 'Press down key to see poetry', { font: 'American Typewriter' });
-      this.add.text(400, 80, 'Press left key to see a cool photo', { font: 'American Typewriter' });
-      this.add.text(400, 100, 'Press right key to see a note', { font: 'American Typewriter' });
+      this.add.image(800, 600, 'Calling');
+      this.add.text(800, 20, 'Press up key to see a cool wizard', { font: 'American Typewriter' });
+      this.add.text(800, 40, 'Press down key to see poetry', { font: 'American Typewriter' });
+      this.add.text(800, 80, 'Press left key to see a cool photo', { font: 'American Typewriter' });
+      this.add.text(800, 100, 'Press right key to see a note', { font: 'American Typewriter' });
 
-    const upKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.UP);
-    const downKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.DOWN);
-    const leftKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
-    const rightKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
-    const enterKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
+    const upKey = this.input.keyboard.on('keyup-UP', listener);
+    const downKey = this.input.keyboard.on('keyup-DOWN', listener);
+    const leftKey = this.input.keyboard.on('keyup-LEFT', listener);
+    const rightKey = this.input.keyboard.on('keyup-RIGHT', listener);
+    const enterKey = this.input.keyboard.on('keyup-ENTER', listener);
 
     upKey.on('up', () => {
         //this.scene.start('Wizard');
@@ -55,8 +55,8 @@ export default class Calling extends Phaser.Scene {
 
 const config = {
     type: Phaser.AUTO,
-    width: 800,
-    height: 600,
+    width: 1600,
+    height: 1200,
     scene: [Calling], //[Wizard, Poetry, Nostalgia, Exist] 
 };
  const game = new Phaser.Game(config);
