@@ -1,4 +1,3 @@
-import Calling from './Calling.js'
 export default class Poetry extends Phaser.Scene {
    constructor() {
      super({ key: 'Poetry' });
@@ -25,12 +24,3 @@ export default class Poetry extends Phaser.Scene {
              this.scene.start('Calling');
     }
 }
-
-var config = {
-    type: Phaser.AUTO,
-    width: 1600,
-    height: 1200,
-    scene: [Calling, Poetry],
-};
-
-const game = new Phaser.Game(config);
