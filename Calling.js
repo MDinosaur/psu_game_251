@@ -28,27 +28,27 @@ export default class Calling extends Phaser.Scene {
     handleUpKey() {
         //this.scene.start('Wizard');
       console.log(`Up Key has been pressed`);
-    });
+    }
 
     handleDownKey() {
         //this.scene.start('Poetry'); 
        console.log(`Down Key has been pressed`);
-    });
+    }
 
     handleLefttKey() {
         //this.scene.start('Nostalgia'); 
        console.log(`Left Key has been pressed`);
-    });
+    }
 
     handleRightKey() {
         //this.scene.start('Exist'); 
        console.log(`Right Key has been pressed`);
-    });
+    }
 
     handleEnterKey() {
         //this.scene.start('Calling');
        console.log(`Enter Key has been pressed`);
-    });
+    }
 
      }
   }
