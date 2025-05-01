@@ -21,7 +21,7 @@ export default class Exist extends Phaser.Scene {
       }
     handleEnterKey () {
            console.log('Enter Key was pressed')
-             this.add.start('Calling');
+             this.scene.start('Calling');
     }
 }
 
