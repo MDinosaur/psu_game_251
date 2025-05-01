@@ -1,7 +1,8 @@
 export default class Calling extends Phaser.Scene {
    constructor() {
       super({ key: 'Calling' });
-
+   }
+   
   preload () {
     console.log(' Calling preloading assets...');
     this.load.image('Calling', 'Transitions/Calling.png'); 
@@ -51,7 +52,6 @@ export default class Calling extends Phaser.Scene {
 
      }
   }
-}
 
 const config = {
     type: Phaser.AUTO,
