@@ -18,7 +18,7 @@ export default class Exist extends Phaser.Scene {
             this.add.text(800, 80, 'Press enter to go back to the beginning', {font: 'American Typewriter'});
 
    this.input.keyboard.on('keyup-ENTER', this.handleEnterKey, this);
-      };
+      }
     handleEnterKey {
            console.log('Enter Key was pressed')
              //this.add.start('Calling');
