@@ -14,9 +14,10 @@ export default class Wizard extends Phaser.Scene {
 
     }
         create () {
-            this.add.image(400,300, 'Wizard');
+            this.add.image(800, 600, 'Wizard');
             this.add.text(300,0, 'Press enter to go back to the beginning', {font: 'American Typewriter'});
 
+    const enterKey = this.input.keyboard.on('keyup-ENTER', listener);
          enterKey.on('enter', () => {
            console.log('Enter Key was pressed')
              //this.add.start('Calling');
@@ -26,8 +27,8 @@ export default class Wizard extends Phaser.Scene {
 
 var config = {
     type: Phaser.AUTO,
-    width: 800,
-    height: 600,
+    width: 1600,
+    height: 1200,
     scene: [Calling, Wizard],
 };
 
