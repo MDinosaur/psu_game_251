@@ -4,7 +4,7 @@ export default class Wizard extends Phaser.Scene {
      super({ key: 'Wizard' });
    }
 
-      function preload () {
+    preload () {
     console.log('Wizard preloading assets...');
     this.load.image('Calling', 'Transitions/Calling.png'); 
     this.load.image('Exist', 'Transitions/Exist.png');
