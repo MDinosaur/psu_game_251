@@ -13,39 +13,39 @@ export default class Calling extends Phaser.Scene {
 }
    create () {
      console.log('CALLING creating scene...')
-      this.add.image(800, 600, 'Calling');
-      this.add.text(800, 20, 'Press up key to see a cool wizard', { font: 'American Typewriter' });
-      this.add.text(800, 40, 'Press down key to see poetry', { font: 'American Typewriter' });
-      this.add.text(800, 80, 'Press left key to see a cool photo', { font: 'American Typewriter' });
-      this.add.text(800, 100, 'Press right key to see a note', { font: 'American Typewriter' });
+      this.add.image(800, 300, 'Calling');
+      this.add.text(500, 80, 'Press up key to see a cool wizard', { font: 'American Typewriter' });
+      this.add.text(600, 80, 'Press down key to see poetry', { font: 'American Typewriter' });
+      this.add.text(700, 80, 'Press left key to see a cool photo', { font: 'American Typewriter' });
+      this.add.text(800, 80, 'Press right key to see a note', { font: 'American Typewriter' });
 
-    const upKey = this.input.keyboard.on('keyup-UP', listener);
-    const downKey = this.input.keyboard.on('keyup-DOWN', listener);
-    const leftKey = this.input.keyboard.on('keyup-LEFT', listener);
-    const rightKey = this.input.keyboard.on('keyup-RIGHT', listener);
-    const enterKey = this.input.keyboard.on('keyup-ENTER', listener);
+   this.input.keyboard.on('keyup-UP', this.handleUpKey, this);
+   this.input.keyboard.on('keyup-DOWN', this.handleDownKey, this);
+   this.input.keyboard.on('keyup-LEFT', this.handleLeftKey, this);
+   this.input.keyboard.on('keyup-RIGHT', this.handleRightKey, this);
+   this.input.keyboard.on('keyup-ENTER', this.handleEnterKey, this);
 
-    upKey.on('up', () => {
+    handleUpKey() {
         //this.scene.start('Wizard');
       console.log(`Up Key has been pressed`);
     });
 
-    downKey.on('down', () => {
+    handleDownKey() {
         //this.scene.start('Poetry'); 
        console.log(`Down Key has been pressed`);
     });
 
-    leftKey.on('left', () => {
+    handleLefttKey() {
         //this.scene.start('Nostalgia'); 
        console.log(`Left Key has been pressed`);
     });
 
-    rightKey.on('right', () => {
+    handleRightKey() {
         //this.scene.start('Exist'); 
        console.log(`Right Key has been pressed`);
     });
 
-    enterKey.on('enter', () => {
+    handleEnterKey() {
         //this.scene.start('Calling');
        console.log(`Enter Key has been pressed`);
     });
