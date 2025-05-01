@@ -4,7 +4,7 @@ export default class Exist extends Phaser.Scene {
      super({ key: 'Exist' });
    }
 
-      function preload () {
+     preload () {
     console.log('Exist preloading assets...');
     this.load.image('Calling', 'Transitions/Calling.png'); 
     this.load.image('Exist', 'Transitions/Exist.png');
