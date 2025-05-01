@@ -14,11 +14,11 @@ export default class Exist extends Phaser.Scene {
 
     }
         create () {
-            this.add.image(800, 600, 'Exist');
-            this.add.text(300,0, 'Press enter to go back to the beginning', {font: 'American Typewriter'});
+            this.add.image(800, 300, 'Exist');
+            this.add.text(800, 80, 'Press enter to go back to the beginning', {font: 'American Typewriter'});
 
-    const enterKey = this.input.keyboard.on('keyup-ENTER', listener);
-         enterKey.on('enter', () => {
+   this.input.keyboard.on('keyup-ENTER', this.handleEnterKey, this);
+         handleEnterKey {
            console.log('Enter Key was pressed')
              //this.add.start('Calling');
         });
