@@ -18,10 +18,10 @@ export default class Wizard extends Phaser.Scene {
             this.add.text(300,0, 'Press enter to go back to the beginning', {font: 'American Typewriter'});
 
     this.input.keyboard.on('keyup-ENTER', this.handleEnterKey, this);
-         handleEnterKey() {
-       console.log(`Enter Key has been pressed`);
-            //this.scene.start('Calling');
-    }
+         }
+   handleEnterKey {
+           console.log('Enter Key was pressed')
+             //this.add.start('Calling');
  }
 }
 
