@@ -1,4 +1,3 @@
-import Calling from './Calling.js'
 export default class Nostalgia extends Phaser.Scene {
    constructor() {
      super({ key: 'Nostalgia' });
@@ -25,12 +24,3 @@ export default class Nostalgia extends Phaser.Scene {
              this.scene.start('Calling');
     }
 }
-
-var config = {
-    type: Phaser.AUTO,
-    width: 1600,
-    height: 1200,
-    scene: [Calling, Nostalgia],
-};
-
-const game = new Phaser.Game(config);
