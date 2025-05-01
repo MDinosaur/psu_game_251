@@ -17,8 +17,8 @@ export default class Nostalgia extends Phaser.Scene {
             this.add.image(800, 600, 'Nostalgia');
             this.add.text(300,0, 'Press enter to go back to the beginning', {font: 'American Typewriter'});
 
-    const enterKey = this.input.keyboard.on('keyup-ENTER', listener);
-         enterKey.on('enter', () => {
+    this.input.keyboard.on('keyup-ENTER', this.handleEnterKey, this);
+         handleEnterKey {
            console.log('Enter Key was pressed')
              //this.add.start('Calling');
         });
