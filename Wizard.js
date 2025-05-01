@@ -19,9 +19,9 @@ export default class Wizard extends Phaser.Scene {
 
     this.input.keyboard.on('keyup-ENTER', this.handleEnterKey, this);
          }
-   handleEnterKey {
+   handleEnterKey() {
            console.log('Enter Key was pressed')
-             //this.add.start('Calling');
+             this.scene.start('Calling');
  }
 }
 
