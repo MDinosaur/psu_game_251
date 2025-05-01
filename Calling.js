@@ -24,8 +24,9 @@ export default class Calling extends Phaser.Scene {
    this.input.keyboard.on('keyup-LEFT', this.handleLeftKey, this);
    this.input.keyboard.on('keyup-RIGHT', this.handleRightKey, this);
    this.input.keyboard.on('keyup-ENTER', this.handleEnterKey, this);
+     }
 
-    handleUpKey() {
+   handleUpKey() {
         //this.scene.start('Wizard');
       console.log(`Up Key has been pressed`);
     }
@@ -50,7 +51,6 @@ export default class Calling extends Phaser.Scene {
        console.log(`Enter Key has been pressed`);
     }
 
-     }
   }
 
 const config = {
