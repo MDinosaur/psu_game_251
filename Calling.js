@@ -17,11 +17,11 @@ export default class Calling extends Phaser.Scene {
 }
    create () {
      console.log('CALLING creating scene...')
-      this.add.image(800, 300, 'Calling');
-      this.add.text(200, 80, 'Press up key to see a cool wizard', { font: 'American Typewriter' });
-      this.add.text(200, 100, 'Press down key to see poetry', { font: 'American Typewriter' });
-      this.add.text(200, 120, 'Press left key to see a cool photo', { font: 'American Typewriter' });
-      this.add.text(200, 140, 'Press right key to see a note', { font: 'American Typewriter' });
+      this.add.image(500, 400, 'Calling');
+      this.add.text(300, 80, 'Press up key to see a cool wizard', { font: 'American Typewriter' });
+      this.add.text(300, 100, 'Press down key to see poetry', { font: 'American Typewriter' });
+      this.add.text(300, 120, 'Press left key to see a cool photo', { font: 'American Typewriter' });
+      this.add.text(300, 140, 'Press right key to see a note', { font: 'American Typewriter' });
 
    this.input.keyboard.on('keyup-UP', this.handleUpKey, this);
    this.input.keyboard.on('keyup-DOWN', this.handleDownKey, this);
@@ -59,8 +59,8 @@ export default class Calling extends Phaser.Scene {
 
 const config = {
     type: Phaser.AUTO,
-    width: 1600,
-    height: 1200,
+    width: 1000,
+    height: 800,
     scene: [Calling, Wizard, Poetry, Nostalgia, Exist]
 };
  const game = new Phaser.Game(config);
