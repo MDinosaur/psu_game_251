@@ -1,4 +1,3 @@
-import Calling from './Calling.js'
 export default class Exist extends Phaser.Scene {
    constructor() {
      super({ key: 'Exist' });
@@ -24,12 +23,3 @@ export default class Exist extends Phaser.Scene {
              this.scene.start('Calling');
     }
 }
-
-var config = {
-    type: Phaser.AUTO,
-    width: 1600,
-    height: 1200,
-    scene: [Calling, Exist],
-};
-
-const game = new Phaser.Game(config);
